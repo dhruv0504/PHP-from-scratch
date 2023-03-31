@@ -22,13 +22,31 @@
 
 ✅ // This is a single-line comment
 ✅ # This is also a single-line comment
+✅ /* multiple line cmnt */
+
+🛑 PHP Variable
+
+✅ Variable declairation starts with $ 
+    
+    Example:
+
+        <?php
+        $txt = "Hello world!";
+        $x = 5;
+        $y = 10.5;
+        ?>
+
+✅ Output of Variable
+
+    echo "I love $txt!"
+
+✅ PHP has three different variable scopes:
+
+    1.local
+    2.global
+    3.static
+
 ✅ 
-✅
-✅
-✅
-
-🛑
-
 🛑
 
 ⭕
