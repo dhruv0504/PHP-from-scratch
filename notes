@@ -1,1 +1,39 @@
+⭕ PHP Tutorials
 
+🛑 PHP Intro
+
+✅ PHP scripts are executed on the server
+✅ PHP files can contain text, HTML, CSS, JavaScript, and PHP code
+✅ PHP code is executed on the server, and the result is returned to the browser as plain HTML
+✅ PHP files have extension ".php"
+✅ PHP can generate dynamic page content
+✅ PHP can create, open, read, write, delete, and close files on the server
+✅ PHP can collect form data
+✅ PHP can send and receive cookies
+✅ PHP can add, delete, modify data in your database
+✅ PHP can be used to control user-access
+✅ PHP can encrypt data
+
+🛑 PHP Syntax
+
+✅ A PHP script starts with <?php and ends with ?>
+
+🛑 PHP Comment
+
+✅ // This is a single-line comment
+✅ # This is also a single-line comment
+✅ 
+✅
+✅
+✅
+
+🛑
+
+🛑
+
+⭕
+⭕
+⭕
+⭕
+⭕
+⭕
