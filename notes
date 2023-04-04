@@ -338,5 +338,107 @@ while(condition);
 
 ⭕ PHP Strings
 
-🛑
-🛑
+        <?php
+        $name='Alicia';
+        echo "$name is friends with kalinda";
+        ?>
+
+Example:
+
+    <?php
+
+    $baby_name = "Shalon";
+
+    echo <<<EOT
+
+        When $baby_name was a baby,
+
+        She used to look like a "boy".
+
+    EOT;
+
+    ?>
+
+
+    HERE,
+
+    <<<EOT is the string delimiter.
+
+    EOT is the acronym for end of text. >>>
+
+✅ The Nowdoc string creation method is similar to the heredoc method but works like the way single quotes work.
+
+✅ No parsing takes place inside the Nowdoc.
+
+🛑 PHP String Function
+
+✅ strtolower
+✅ strtoupper 
+✅ strlen
+✅ explode
+✅ substr
+✅ str_replace
+✅ strpos
+✅ sha1
+✅ md5
+✅ str_word_count
+✅ ucfirst
+✅ lcfirst
+
+⭕ PHP Functions
+
+✅A Function in PHP is a reusable piece or block of code that performs a specific action. 
+✅It takes input from the user in the form of parameters, performs certain actions, and gives the output. 
+✅Functions can either return values when called or can simply perform an operation without returning any value.
+
+🛑 Numeric Function
+
+✅ is_number
+✅ number_format
+✅ rand
+✅ round
+✅ sqrt
+✅ cos
+✅ sin
+✅ tan
+✅ pi
+
+🛑 Date Function
+
+✅ The date function is used to format Unix date and time to human readable format.
+
+🛑 User Defined Function
+
+✅ 
+
+<?php
+
+//define a function that displays hello function
+
+function add_numbers(){   
+	echo 1 + 2;
+}
+add_numbers ();
+?>
+
+⭕ PHP Session and Cookie
+
+🛑 Cookies
+
+✅ A cookie is a small file with the maximum size of 4KB that the web server stores on the client computer.
+✅ Http is a stateless protocol; cookies allow us to track the state of the application using small files stored on the user’s computer.The path were the cookies are stored depends on the browser.Internet Explorer usually stores them in Temporal Internet Files folder.
+✅ Personalizing the user experience – this is achieved by allowing users to select their preferences.The page requested that follow are personalized based on the set preferences in the cookies.
+✅ Tracking the pages visited by a user
+
+🛑 Creating Cookies:
+
+✅ Example:
+
+    <?php
+
+    setcookie(cookie_name, cookie_value, [expiry_time], [cookie_path], [domain], [secure], [httponly]);
+
+    ?>
+
+✅
+✅
