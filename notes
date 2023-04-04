@@ -46,9 +46,47 @@
 
 ⭕ PHP Data Types, Variables, Constant, Operators Tutorial
 
+🛑 PHP Data Types
+
+✅ A Data type is the classification of data into a category according to its attributes;
+
+        Alphanumeric characters are classified as strings
+        Whole numbers are classified integers
+        Numbers with decimal points are classified as floating points.
+        True or false values are classified as Boolean.
+
+🛑 PHP Variables
+
+✅ All variable names must start with the dollar sign.
+✅ The var_dump function is used to determine the data type. 
+
+    Example:
+
+    $a = 1;
+    var_dump($a);
+
+    O/p:
+    int(1)
+
+🛑 PHP Constant
+
+✅  A constant is a variable whose value cannot be changed at runtime.
+
+    Example:
+
+    define(‘PI’,3.14); 
+
+🛑 PHP Operators 
+
 ✅
-✅
-✅
-✅
-✅
-✅
+
+Operator	    Name	            Description	                                Example	                    Output
++---------------------------------------------------------------------------------------------------------------------------+
+
++	            Addition	        Summation of x and y	                    1 + 1;	                    2
+–	            Subtraction	        Difference between x and y	                1 – 1;	                    0
+*	            Multiplication	    Multiplies x and y	                        3 * 7;	                    21
+/	            Division	        Quotient of x and y	                        45 / 5;	                    9
+%	            PHP Modulus	        Gives remainder of dividing x and y	        10 % 3;	                    1
+-n	            Negation	        Turns n into a negative number	            -(-5);	                    5
+x . y	        Concatenation	    Puts together x and y	                    “PHP” . ” ROCKS”;10 . 3;	PHP ROCKS103
