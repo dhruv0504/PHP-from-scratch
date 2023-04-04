@@ -150,5 +150,97 @@ X xor y	                Exclusive or, xor	    Returns true if only x is true or 
 
 ✅ A PHP array is a variable that stores more than one piece of related data in a single variable.
 
+🛑 Numeric Arrays
+
+✅ Numeric arrays use number as access keys.
+
+✅ An access key is a reference to a memory slot in an array variable.
+
+✅ The access key is used whenever we want to read or assign a new value an array element.
+
+    Example:
+    
+    $movie[0] = 'Shaolin Monk';
+    $movie[1] = 'Drunken Master';
+    $movie[2] = 'American Ninja';
+    $movie[3] = 'Once upon a time in China';
+    $movie[4] = 'Replacement Killers';
+
+    $movie = array(0 => "Shaolin Monk",
+               1 => "Drunken Master",
+               2 => "American Ninja",
+               3 => "Once upon a time in China",
+               4 =>"Replacement Killers" );
+
+🛑 PHP Associative Array
+
+✅ Associative array differ from numeric array in the sense that associative arrays use descriptive names for id keys.
+
+    Example:
+
+    <?php
+    $variable_name['key_name'] = value;
+
+    $variable_name = array('keyname' => value);
+    ?>
+
+🛑 PHP Multi-Dimensional arrays
+
+✅ These are arrays that contain other nested arrays.
+
+✅ The advantage of multidimensional arrays is that they allow us to group related data together.
+
+🛑 PHP Array Functions:
+
+✅ Count : The count function is used to count the number of elements that an php array contains. The code below shows the implementation.
+
+    Example:
+
+    <?php
+    $lecturers = array("Mr. Jones", "Mr. Banda", "Mrs. Smith");
+    echo count($lecturers);
+    ?>
+
+✅ is_array function : The is_array function is used to determine if a variable is an array or not. Let’s now look at an example that implements the is_array functions.
+
+✅ Sort : This function is used to sort arrays by the values.
+
+    NOTE: It removes the existing access keys and add new numeric keys.
+
+        Example:
+        
+        <?php
+        $persons = array("Mary" => "Female", "John" => "Male", "Mirriam" => "Female");
+
+        sort($persons);
+
+        print_r($persons);
+        ?>
+
+        O/P:
+
+        Array ( [0] => Female [1] => Female [2] => Male )
+
+✅ ksort: This function is used to sort the array using the key. The following example illustrates its usage.
+
+✅ asort : This function is used to sort the array using the values. The following example illustrates its usage.
+
+    Example:
+
+    <?php
+
+    $persons = array("Mary" => "Female", "John" => "Male", "Mirriam" => "Female");
+
+    asort($persons);
+
+    print_r($persons);
+
+    ?>
+
+    O/P:
+
+    Array ( [Mary] => Female [Mirriam] => Female [John] => Male )
+🛑
+🛑
 ⭕
 ⭕
