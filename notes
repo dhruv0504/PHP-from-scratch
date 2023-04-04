@@ -9,4 +9,46 @@
 
 ✅ The purpose of the scripts is usually to enhance the performance or perform routine tasks for an application.
 
+✅ Server side scripts are interpreted on the server while client side scripts are interpreted by the client application.
+
+⭕ Programming Language Vs Scripting Language
+
+✅ 
+    Programming language	                                                    Scripting language
++-------------------------------------------------------------------------------------------------------------------------------------+
+1. Has all the features needed to develop complete applications.	            Mostly used for routine tasks
+2. The code has to be compiled before it can be executed	                    The code is usually executed without compiling
+3. Does not need to be embedded into other languages	                        Is usually embedded into other software environments.
+
+⭕ What does PHP stand for?
+
+✅ PHP: Hypertext Preprocessor.
+✅ HTML is an added advantage when learning PHP Language. You can even learn PHP without knowing HTML but it’s recommended you at least know the basics of HTML.
+✅ Database management systems DBMS for database powered applications.
+✅ For more advanced topics such as interactive applications and web services, you will need JavaScript and XML.
+
+⭕ Why use PHP?
+
+✅  do not need to have PHP installed; only a web browser would be enough.
+✅  PHP has in built support for working hand in hand with MySQL
+✅  PHP is cross platform; this means you can deploy your application on a number of different operating systems such as windows, Linux, Mac OS etc.
+
+⭕ PHP File Extension
+
+✅ .phtml
+✅ .php3
+✅ .php4
+✅ .php5
+✅ .phps
+✅ <?php … ?>
+
+⭕ XAMPP
+
+⭕ PHP Data Types, Variables, Constant, Operators Tutorial
+
+✅
+✅
+✅
+✅
+✅
 ✅
