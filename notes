@@ -1,57 +1,12 @@
-⭕ PHP Tutorials
+⭕ What is PHP?
 
-🛑 PHP Intro
+✅ PHP is a server side scripting language. that is used to develop Static websites or Dynamic websites or Web applications.
+    PHP stands for Hypertext Pre-processor, that earlier stood for Personal Home Pages.
 
-✅ PHP scripts are executed on the server
-✅ PHP files can contain text, HTML, CSS, JavaScript, and PHP code
-✅ PHP code is executed on the server, and the result is returned to the browser as plain HTML
-✅ PHP files have extension ".php"
-✅ PHP can generate dynamic page content
-✅ PHP can create, open, read, write, delete, and close files on the server
-✅ PHP can collect form data
-✅ PHP can send and receive cookies
-✅ PHP can add, delete, modify data in your database
-✅ PHP can be used to control user-access
-✅ PHP can encrypt data
+⭕ What is Scripting Language?
 
-🛑 PHP Syntax
+✅ A script is a set of programming instructions that is interpreted at runtime.
 
-✅ A PHP script starts with <?php and ends with ?>
+✅ The purpose of the scripts is usually to enhance the performance or perform routine tasks for an application.
 
-🛑 PHP Comment
-
-✅ // This is a single-line comment
-✅ # This is also a single-line comment
-✅ /* multiple line cmnt */
-
-🛑 PHP Variable
-
-✅ Variable declairation starts with $ 
-    
-    Example:
-
-        <?php
-        $txt = "Hello world!";
-        $x = 5;
-        $y = 10.5;
-        ?>
-
-✅ Output of Variable
-
-    echo "I love $txt!"
-
-✅ PHP has three different variable scopes:
-
-    1.local
-    2.global
-    3.static
-
-✅  
-🛑
-
-⭕
-⭕
-⭕
-⭕
-⭕
-⭕
+✅
