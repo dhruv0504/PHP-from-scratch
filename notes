@@ -78,7 +78,7 @@
 
 🛑 PHP Operators 
 
-✅
+✅ Arithmetic
 
 Operator	    Name	            Description	                                Example	                    Output
 +---------------------------------------------------------------------------------------------------------------------------+
@@ -90,3 +90,18 @@ Operator	    Name	            Description	                                Exampl
 %	            PHP Modulus	        Gives remainder of dividing x and y	        10 % 3;	                    1
 -n	            Negation	        Turns n into a negative number	            -(-5);	                    5
 x . y	        Concatenation	    Puts together x and y	                    “PHP” . ” ROCKS”;10 . 3;	PHP ROCKS103
+
+✅ Assignment
+
+Operator	    Name	            Description	                        Example	                            Output
++-----------------------------------------------------------------------------------------------------------------------------+
+
+x = ?	        assignment	        Assigns the value of x to ?	        $x = 5;	                            5
+x += ?	        addition	        Increments the value of x by ?	    $x = 2;$x += 1;	                    3
+X -= ?	        subtraction	        Subtracts ? from the value of x	    $x = 3;$x -= 2;	                    1
+X *=?	        multiplication	    Multiplies the value of x ? times	$x = 0;$x *=9;	                    0
+X /=?	        division	        Quotient of x and ?	                $x = 6;$x /=3;	                    2
+X %=?	        modulus	            The reminder of dividing x by?	    $x = 3;$x %= 2;	                    1
+X .=?	        concatenate	        Puts together items	”               $x = ‘Pretty’;$x .= ‘ Cool!’;”	    Pretty Cool!
+
+✅ 
