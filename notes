@@ -228,19 +228,115 @@ X xor y	                Exclusive or, xor	    Returns true if only x is true or 
     Example:
 
     <?php
-
     $persons = array("Mary" => "Female", "John" => "Male", "Mirriam" => "Female");
-
     asort($persons);
-
     print_r($persons);
-
     ?>
 
     O/P:
 
     Array ( [Mary] => Female [Mirriam] => Female [John] => Male )
+
+⭕ What is a control structure?
+
+✅ Code execution can be grouped into categories as shown below
+
+        Sequential – this one involves executing all the codes in the order in which they have been written.
+        Decision – this one involves making a choice given a number of options. The code executed depends on the value of the condition.
+
+🛑 PHP IF Else
+
+✅ 
+        <?php
+        if (condition is true) {
+
+        block one
+
+        else
+
+        block two
+
+        }
+        ?>
+
+🛑 PHP Switch Case
+
+✅
+
+Example:
+
+<?php
+switch(condition){
+case value:
+//block of code to be executed
+break;
+case value2:
+//block of code to be executed
+break
+default://default block code
+break;
+}
+?>
+
+⭕ PHP Loop: For, ForEach, While, Do While 
+
+🛑 PHP For Loop
+
+✅ for
+
+    Syntax:
+
+    <?php
+    for (initialize; condition; increment){
+
+    //code to be executed
+
+    }
+    ?>
+    
+✅ for… each.
+
+    Syntax:
+
+    <?php
+    foreach($array_variable  as $array_values){
+
+    block of code to be executed
+
+    }
+    ?> 
+
+🛑 While Loop
+
+✅ They are used to execute a block of code a repeatedly until the set condition gets satisfied
+
+✅ Types of while loops
+
+    Do… while –     executes the block of code at least once before evaluating the condition
+    While… –    checks the condition first. If it evaluates to true, the block of code is executed as long as the condition is true. 
+                If it evaluates to false, the execution of the while loop is terminated.
+
+✅ 
+    <?php
+    while (condition){
+
+    block of code to be executed;
+
+    }
+    ?>
+
+✅
+
+<?php
+do{
+
+block of code to be executed
+
+}
+while(condition);
+?>
+
+⭕ PHP Strings
+
 🛑
 🛑
-⭕
-⭕
