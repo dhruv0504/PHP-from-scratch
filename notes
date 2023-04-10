@@ -599,8 +599,11 @@ The action attribute of the form specifies the submission URL that processes the
                                 HERE,
                                 “$_GET[…]” is the PHP array
                                 “’variable_name’” is the URL variable name.
-✅
 
-✅
+⭕ PHP File() Handling & Functions   
 
+🛑
+🛑
+🛑
+🛑
 🛑
