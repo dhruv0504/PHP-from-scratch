@@ -517,6 +517,90 @@ add_numbers ();
                 unset($_SESSION['product']); //destroy product session item 
 
                 ?>
+    
+        Session_destroy removes all the session data including cookies associated with the session.
 
-    ✔
-    ✔
+        Unset only frees the individual session variables.
+
+        Other data remains intact.
+    
+⭕ PHP Registration Form using GET, POST Methods 
+
+🛑 What is Form?
+
+✅ Forms are used to get input from the user and submit it to the web server for processing.
+
+🛑 When and why we are using forms?
+
+✅ Forms come in handy when developing flexible and dynamic applications that accept user input.
+✅ Forms can be used to edit already existing data from the database
+
+🛑 Create a form
+
+Example:
+
+    <html>
+    <head>
+        <title>Registration Form</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+
+        <h2>Registration Form</h2>
+
+        <form action="registration_form.php" method="POST"> First name:
+
+            <input type="text" name="firstname"> <br> Last name:
+
+            <input type="text" name="lastname"> 
+
+            <input type="hidden" name="form_submitted" value="1" />
+
+            <input type="submit" value="Submit">
+
+        </form>
+    </body>
+    </html>
+
+✅ <input type=”hidden” name=”form_submitted” value=”1″/> is a hidden value that is used to check whether the form has been submitted or not
+
+🛑 Submitting the form data to the server
+
+The action attribute of the form specifies the submission URL that processes the data. The method attribute specifies the submission type.
+
+✅ PHP POST method
+
+    ✔ This is the built in PHP super global array variable that is used to get values submitted via HTTP POST method.
+    ✔ The array variable can be accessed from any script in the program; it has a global scope.
+    ✔ This method is ideal when you do not want to display the form post values in the URL.
+    ✔ A good example of using post method is when submitting login details to the server.
+
+    It has the following syntax.
+
+    <?php
+        $_POST['variable_name'];
+    ?>
+                                    HERE,
+                                        “$_POST[…]” is the PHP array
+                                        “’variable_name’” is the URL variable name.
+
+✅ PHP GET method
+
+    ✔ This is the built in PHP super global array variable that is used to get values submitted via HTTP GET method.
+    ✔ The array variable can be accessed from any script in the program; it has a global scope.
+    ✔ This method displays the form values in the URL.
+    ✔ It’s ideal for search engine forms as it allows the users to book mark the results.
+    
+    It has the following syntax.
+
+    <?php
+        $_GET['variable_name'];
+    ?>
+                                HERE,
+                                “$_GET[…]” is the PHP array
+                                “’variable_name’” is the URL variable name.
+✅
+
+✅
+
+🛑
