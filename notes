@@ -602,8 +602,155 @@ The action attribute of the form specifies the submission URL that processes the
 
 ⭕ PHP File() Handling & Functions   
 
+🛑 What is a File?
+
+✅ A file is simply a resource for storing information on a computer.
+
+🛑 PHP File Formats Support
+
+✅ PHP file functions support a wide range of file formats that include:
+
+    File.txt
+    File.log
+    File.custom_extension i.e. file.xyz
+    File.csv
+    File.gif, file.jpg etc
+    Files provide a permanent cost effective data storage solution for simple data compared to databases that require other software and skills to manage DBMS systems.
+    You want to store simple data such as server logs for later retrieval and analysis
+    You want to store program settings i.e. program.ini
+
+🛑 PHP file() Function
+
+✅ PHP provides a convenient way of working with files via its rich collection of built in functions.
+    
+🛑 PHP file_exists() Function
+
+✅ This function is used to determine whether a file exists or not.
+
+✅ Example:
+
+    <?php
+        file_exists($filename); 
+    ?>  
+            HERE,
+
+                “file_exists()” is the PHP function that returns true if the file exists and false if it does not exist.
+                “$file_name” is the path and name of the file to be checked
+
+
+🛑 PHP fopen() Function
+
+✅ 
+
+    <?php
+    fopen($file_name,$mode,$use_include_path,$context);
+    ?>
+                HERE,
+
+                “fopen” is the PHP open file function
+                “$file_name” is the name of the file to be opened
+                “$mode” is the mode in which the file should be opened, the table below shows the modes
+
+✅ 
+
+Mode	Description
++---------------------------------------------------------------+
+r	    Read file from beginning.
+        Returns false if the file doesn’t exist.
+        Read only
+
+r+	    Read file from beginning
+        Returns false if the file doesn’t exist.
+        Read and write
+
+w	    Write to file at beginning truncate file to zero length
+        If the file doesn’t exist attempt to create it.
+        Write only
+
+w+	    Write to file at beginning, truncate file to zero length
+        If the file doesn’t exist attempt to create it.
+        Read and Write
+
+a	    Append to file at end
+        If the file doesn’t exist attempt to create it.
+        Write only
+
+a+	    Php append to file at end
+        If the file doesn’t exist attempt to create it
+        Read and write
+
+✅ “$use_include_path” is optional, default is false, if set to true, the function searches in the include path too.
+
+✅ “$context” is optional, can be used to specify the context support.
+
+🛑 PHP fwrite() Function
+
+✅ The fwrite function is used to write files.
+
+    <?php
+    fwrite($handle, $string, $length);
+    ?>
+
+                            HERE,
+
+                            “fwrite” is the PHP function for writing to files
+                            “$handle” is the file pointer resource
+                            “$string” is the data to be written in the file.
+                            “$length” is optional, can be used to specify the maximum file length.
+ 
+🛑 PHP fclose() Function
+
+✅ The fclose() function is used to close a file in php which is already open
+
+✅ 
+        <?php
+        fclose($handle); 
+        ?>
+                    HERE,
+
+                    “fclose” is the PHP function for closing an open file
+                    “$handle” is the file pointer resource.
+
+🛑 PHP fgets() Function
+
+✅ The fgets function is used to read php files line by line. It has the following basic syntax. 
+        
+        fgets($handle); 
+        
+                    HERE,
+                    “$fgets” is the PHP function for reading file lines
+                    “$handle” is the file pointer resource.
+
+✅ “die()” function is called if an error occurs. It displays a message and exists execution of the script
+
+🛑 PHP copy() Function
+
+✅ The PHP copy function is used to copy files. 
+
+✅ 
+
+        copy($file,$copied_file); 
+
+                HERE,
+
+                “$file” specifies the file path and name of the file to be copied.
+                “copied_file” specified the path and name of the copied file
+
+🛑 Deleting a file
+
+✅ The unlink function is used to delete the file. The code below illustrates the implementation.
+
+🛑 PHP file_get_contents() Function
+
+✅ The file_get_contents function is used to read the entire file contents.
+
+✅ The difference between file_get_contents and fgets is that file_get_contents returns the file data as a string while fgets reads the file line by line. 
+
+⭕ PHP Try Catch Example: Exception & Error Handling
+
 🛑
 🛑
 🛑
 🛑
-🛑
+✅
+✅
