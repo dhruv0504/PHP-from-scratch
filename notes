@@ -3,6 +3,8 @@
 ✅ PHP is a server side scripting language. that is used to develop Static websites or Dynamic websites or Web applications.
     PHP stands for Hypertext Pre-processor, that earlier stood for Personal Home Pages.
 
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
 ⭕ What is Scripting Language?
 
 ✅ A script is a set of programming instructions that is interpreted at runtime.
@@ -10,6 +12,8 @@
 ✅ The purpose of the scripts is usually to enhance the performance or perform routine tasks for an application.
 
 ✅ Server side scripts are interpreted on the server while client side scripts are interpreted by the client application.
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 ⭕ Programming Language Vs Scripting Language
 
@@ -20,6 +24,8 @@
 2. The code has to be compiled before it can be executed	                    The code is usually executed without compiling
 3. Does not need to be embedded into other languages	                        Is usually embedded into other software environments.
 
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
 ⭕ What does PHP stand for?
 
 ✅ PHP: Hypertext Preprocessor.
@@ -27,11 +33,15 @@
 ✅ Database management systems DBMS for database powered applications.
 ✅ For more advanced topics such as interactive applications and web services, you will need JavaScript and XML.
 
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
 ⭕ Why use PHP?
 
 ✅  do not need to have PHP installed; only a web browser would be enough.
 ✅  PHP has in built support for working hand in hand with MySQL
 ✅  PHP is cross platform; this means you can deploy your application on a number of different operating systems such as windows, Linux, Mac OS etc.
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 ⭕ PHP File Extension
 
@@ -42,7 +52,11 @@
 ✅ .phps
 ✅ <?php … ?>
 
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
 ⭕ XAMPP
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 ⭕ PHP Data Types, Variables, Constant, Operators Tutorial
 
@@ -127,16 +141,22 @@ X or y, x || y	        Or	                    Returns true if either x or y is t
 X xor y	                Exclusive or, xor	    Returns true if only x is true or only y is true	1 xor 1;1 xor 0;	    False or 0True or 1
 !x	                    Not	                    Returns true if x is false and false if x is true	!0;	                    True or 1
 
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
 ⭕ PHP Comments
 
 ✅ //
 ✅ /* */
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 ⭕ PHP Include & PHP Include_once
 
 ✅ The “include” php statement is used to include other files into a PHP file.
 
 ✅ It has two variations, include and include_once. Include_once is ignored by the PHP interpreter if the file to be included.
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 ⭕ PHP Require & PHP require_once
 
@@ -145,6 +165,8 @@ X xor y	                Exclusive or, xor	    Returns true if only x is true or 
 ✅ The require/require_once statement is used to include file.
 
 ✅ Require_once is ignored if the required file has already been added by any of the four include statements.
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 ⭕ PHP Array
 
@@ -237,6 +259,8 @@ X xor y	                Exclusive or, xor	    Returns true if only x is true or 
 
     Array ( [Mary] => Female [Mirriam] => Female [John] => Male )
 
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
 ⭕ What is a control structure?
 
 ✅ Code execution can be grouped into categories as shown below
@@ -277,6 +301,8 @@ default://default block code
 break;
 }
 ?>
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 ⭕ PHP Loop: For, ForEach, While, Do While 
 
@@ -335,6 +361,8 @@ block of code to be executed
 }
 while(condition);
 ?>
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 ⭕ PHP Strings
 
@@ -748,9 +776,155 @@ a+	    Php append to file at end
 
 ⭕ PHP Try Catch Example: Exception & Error Handling
 
-🛑
-🛑
-🛑
-🛑
-✅
-✅
+🛑 What is an Exception?
+
+✅ An error is an unexpected program result that cannot be handled by the program itself.
+
+✅ Errors are resolved by fixing the program. An example of an error would be an infinite loop that never stops executing.
+
+✅ An exception is unexpected program result that can be handled by the program itself.
+
+✅ Examples of exception include trying to open a file that does not exist.
+
+✅ This exception can be handled by either creating the file or presenting the user with an option of searching for the file.
+
+🛑 Why handle exception?
+
+✅ Avoid unexpected results on our pages which can be very annoying or irritating to our end users
+
+✅ Improve the security of our applications by not exposing information which malicious users may use to attack our applications
+
+✅ Php Exceptions are used to change the normal flow of a program if any predictable error occurs.
+
+🛑 PHP Error handling
+
+✅ When an error occurs, depending on your configuration settings, PHP displays the error message in the web browser with information relating to the error that occurred.
+
+✅ We are going to look at three (3) commonly used methods;
+
+        Die statements – the die function combines the echo and exit function in one. 
+                        It is very useful when we want to output a message and stop the script execution when an error occurs.
+        
+        Custom error handlers – these are user defined functions that are called whenever an error occurs.
+        
+        PHP error reporting – the error message depending on your PHP error reporting settings. 
+                            This method is very useful in development environment when you have no idea what caused the error. 
+                            The information displayed can help you debug your application.
+
+🛑 Error Handling Examples
+
+✅ Custom error handlers are powerful in the sense that
+        
+        They allow us to customize the error messages.
+        The custom error handler can also include error logging in a file/database, emailing the developer etc.
+
+✅ 
+    <?php
+    error_reporting($reporting_level);
+    ?>
+            HERE,
+
+            “error_reporting” is the PHP error reporting function
+            “$reporting_level” is optional, can be used to set the reporting level. 
+            If no reporting level has been specified, PHP will use the default error reporting level as specified in the php.ini file.
+
+    Reporting Level	            Description	Example
+    +-------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+    E_WARNING	                Displays warning messages only. Does not halt the execution of the script	error_reporting(E_WARNING);
+    E_NOTICE	                Displays notices that can occur during normal execution of a program or could be an error.	error_reporting(E_ NOTICE);
+    E_USER_ERROR	            Displays user generated errors i.e. custom error handler	error_reporting(E_ USER_ERROR);
+    E_USER_WARNING	            Displays user generated warning messages	error_reporting(E_USER_WARNING);
+    E_USER_NOTICE	            Displays user generated notices	error_reporting(E_USER_NOTICE);
+    E_RECOVERABLE_ERROR	        Displays error that are not fatal and can be handled using custom error handlers	error_reporting(E_RECOVERABLE_ERROR);
+    E_ALL	                    Displays all errors and warnings	error_reporting(E_ ALL);
+
+🛑 Difference between Errors and Exception:
+
+✅ Exceptions are thrown and intended to be caught while errors are generally irrecoverable.
+
+✅ Exceptions are handled in an object oriented way.This means when an exception is thrown; an exception object is created that contains the exception details.
+
+🛑 The table below shows the exception object methods
+
+✅ getMessage()	Displays the exception’s message	
+
+        <?php
+        echo $e->getMessage();
+        ?>
+
+✅ getCode()	Displays the numeric code that represents the exception	
+
+        <?php
+        echo $e->getCode();
+        ?>
+
+✅ getFile()	Displays the file name and path where the exception occurred	
+
+        <?php
+        echo $e->getFile();
+        ?>
+
+✅ getLine()	Displays the line number where the exception occurred	
+
+        <?php
+        echo $e->getLine();
+        ?>
+
+✅ getTrace()	Displays an array of the backtrace before the exception	
+
+        <?php
+        print_r( $e->getTrace());
+        ?>
+
+✅ getPrevious()	Displays the previous exception before the current one	
+
+        <?php
+        echo $e->getPrevious();
+        ?>
+        
+✅ getTraceAsString()	Displays the backtrace of the exception as a string instead of an array	
+
+        <?php
+        echo $e->getTraceAsString();
+        ?>
+
+✅ __toString()	Displays the entire exception as a string	
+
+        <?php
+        echo $e->__toString();
+        ?>
+
+✅ 
+    <?php
+    throw new Exception("This is an exception example");
+    ?>
+        HERE,
+
+        “throw” is the keyword used to throw the exception
+        “new Exception(…)” creates an exception object and passes “This is an exception example “ string as the message parameter.
+
+✅ 
+
+    <?php
+    try {
+        $var_msg = "This is an exception example";
+        throw new Exception($var_msg);
+    }
+    catch (Exception $e) {
+        echo "Message: " . $e->getMessage();
+        echo "";
+        echo "getCode(): " . $e->getCode();
+        echo "";
+        echo "__toString(): " . $e->__toString();
+    }
+    ?>
+
+🛑 Multiple Exceptions
+
+✅ Multiple exception use multiple try catch blocks to handle the thrown exceptions. Multiple exceptions are useful when;
+
+        You want to display a customized message depending on the exception thrown
+        You want to perform a unique operation depending on the exception thrown
+
+⭕ PHP preg_match(): Regular Expressions (Regex)
