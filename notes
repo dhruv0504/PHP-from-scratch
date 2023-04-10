@@ -425,25 +425,98 @@ add_numbers ();
 
 🛑 Cookies
 
-✅ A cookie is a small file with the maximum size of 4KB that the web server stores on the client computer.
-✅ Http is a stateless protocol; cookies allow us to track the state of the application using small files stored on the user’s computer.The path were the cookies are stored depends on the browser.Internet Explorer usually stores them in Temporal Internet Files folder.
-✅ Personalizing the user experience – this is achieved by allowing users to select their preferences.The page requested that follow are personalized based on the set preferences in the cookies.
-✅ Tracking the pages visited by a user
+    ✅ A cookie is a small file with the maximum size of 4KB that the web server stores on the client computer.
+    ✅ Http is a stateless protocol; cookies allow us to track the state of the application using small files stored on the user’s computer.The path were the cookies are stored depends on the browser.Internet Explorer usually stores them in Temporal Internet Files folder.
+    ✅ Personalizing the user experience – this is achieved by allowing users to select their preferences.The page requested that follow are personalized based on the set preferences in the cookies.
+    ✅ Tracking the pages visited by a user
 
-🛑 Creating Cookies:
+    ✔ Creating Cookies:
 
-✅ Example:
+    ✅ Example:
 
-    <?php
+        <?php
 
-    setcookie(cookie_name, cookie_value, [expiry_time], [cookie_path], [domain], [secure], [httponly]);
+        setcookie(cookie_name, cookie_value, [expiry_time], [cookie_path], [domain], [secure], [httponly]);
 
-    ?>
+        ?>
 
-🛑 Retrieving Cookie Value
+    ✔ Retrieving Cookie Value
 
-✅
+    ✅
 
-🛑 Deleting cookie_name
- 
-✅
+        <?php
+            print_r($_COOKIE);    //output the contents of the cookie array variable 
+        ?>
+
+    ✔ Deleting cookie_name
+    
+    ✅
+
+        <?php
+
+        setcookie("user_name", "Guru99", time() - 360,'/');
+
+        ?>
+
+🛑 Session
+
+✅ A session is a global variable stored on the server.
+✅ Each session is assigned a unique id which is used to retrieve stored values.
+✅ Whenever a session is created, a cookie containing the unique session id is stored on the user’s computer and returned with every request to the server. 
+    If the client browser does not support cookies, the unique php session id is displayed in the URL
+✅ Sessions have the capacity to store relatively large data compared to cookies.
+✅ The session values are automatically deleted when the browser is closed. If you want to store the values permanently, then you should store them in the database.
+✅ Just like the $_COOKIE array variable, session variables are stored in the $_SESSION array variable. Just like cookies, the session must be started before any HTML tags.
+
+🤞 Why and when to use Sessions?
+
+1.You want to store important information such as the user id more securely on the server where malicious users cannot temper with them.
+2.You want to pass values from one page to another.
+3.You want the alternative to cookies on browsers that do not support cookies.
+4.You want to store global variables in an efficient and more secure way compared to passing them in the URL
+5.You are developing an application such as a shopping cart that has to temporary store information with a capacity larger than 4KB.
+
+    ✔ Creating Session:
+        
+        Example:
+
+        <?php
+
+        session_start(); //start the PHP_session function 
+
+        if(isset($_SESSION['page_count']))
+        {
+            $_SESSION['page_count'] += 1;
+        }
+        else
+        {
+            $_SESSION['page_count'] = 1;
+        }
+        echo 'You are visitor number ' . $_SESSION['page_count'];
+
+        ?>
+    
+    ✔ Destroying Session Variables
+
+        The session_destroy() function is used to destroy the whole Php session variables.
+
+            Example:
+
+                <?php
+
+                session_destroy(); //destroy entire session 
+
+                ?>
+
+        If you want to destroy only a session single item, you use the unset() function.
+
+            Example:
+
+                <?php
+
+                unset($_SESSION['product']); //destroy product session item 
+
+                ?>
+
+    ✔
+    ✔
