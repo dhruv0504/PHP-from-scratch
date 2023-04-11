@@ -1022,8 +1022,155 @@ a-z	                        Matches lower case letters	                         
 A-Z	                        Matches upper case letters	                                        /A-Z/ matches WHAT, HOW, WHY etc.
 0-9	                        Matches any number between 0 and 9	                                /0-4/ matches 0,1,2,3,4
 
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+⭕ How to Send Email using PHP mail() Function
+
+🛑 What is PHP mail?
+
+✅ PHP mail is the built in PHP function that is used to send emails from PHP scripts.
+
+    The mail function accepts the following parameters:
+
+        Email address
+        Subject
+        Message
+        CC or BC email addresses
+
+🛑 Why/When to use the mail PHP
+
+✅ Sending mail using PHP
+
+    The PHP mail function has the following basic syntax
+
+        <?php
+        mail($to_email_address,$subject,$message,[$headers],[$parameters]);
+        ?>
+                        HERE,
+
+                        “$to_email_address” is the email address of the mail recipient
+                        “$subject” is the email subject
+                        “$message” is the message to be sent.
+                        “[$headers]” is optional, it can be used to include information such as CC, BCC
+
+                        ✔ CC is the acronym for carbon copy. It’s used when you want to send a copy to an interested person i.e. 
+                        a complaint email sent to a company can also be sent as CC to the complaints board.
+                        ✔ BCC is the acronym for blind carbon copy. It is similar to CC. The email addresses included in the BCC section will not be shown to the other recipients.
+
+🛑 Simple Mail Transmission Protocol (SMTP)
+
+✅ PHP mailer uses Simple Mail Transmission Protocol (SMTP) to send mail.
+
+✅ On a hosted server, the SMTP settings would have already been set.
+
+✅ The SMTP mail settings can be configured from “php.ini” file in the PHP installation folder.
+
+🛑 Sanitizing email user inputs
+
 ✅
+Let’s assume you have to create a contact us form for users fill in the details and then submit.
+
+    Users can accidently or intentional inject code in the headers which can result in sending spam mail
+    To protect your system from such attacks, you can create a custom function that sanitizes and validates the values before the mail is sent.
+
 ✅
-✅
-🛑
-🛑
+
+It has the following basic syntax.
+
+    <?php
+    filter_var($field, SANITIZATION TYPE);
+    ?>
+    
+                    HERE,
+
+                    “filter_var(…)” is the validation and sanitization function
+                    “$field” is the value of the field to be filtered.
+                    “SANITIZATION TYPE” is the type of sanitization to be performed on the field such as;
+                    
+                            FILTER_VALIDATE_EMAIL – it returns true for valid email addresses and false for invalid email addresses.
+                            FILTER_SANITIZE_EMAIL – it removes illegal characters from email addresses. info\@domain.(com) returns info@domain.com.
+                            FILTER_SANITIZE_URL – it removes illegal characters from URLs. http://www.example@.comé returns >http://www.example@.com
+                            FILTER_SANITIZE_STRING – it removes tags from string values. <b>am bold</b> becomes am bold.
+
+🛑 Secure Mail
+
+✅ Emails can be intercepted during transmission by unintended recipients.
+
+✅ This can exposure the contents of the email to unintended recipients.
+
+✅ Secure mail solves this problem by transmitting emails via Hypertext Transfer Protocol Secure (HTTPS).
+
+✅ HTTPS encrypts messages before sending them.
+
+⭕ PHP MySQLi Functions
+
+✅ PHP has a rich collection of built in functions for manipulating MySQL databases.
+
+🛑 PHP mysqli_connect function
+
+✅ The PHP mysql connect function is used to connect to a MySQL database server.
+
+    <?php;
+        $db_handle = mysqli_connect($db_server_name, $db_user_name, $db_password);
+    ?>
+
+                HERE,
+
+                    “$db_handle” is the database connection resource variable.
+                    “mysqli_connect(…)” is the function for php database connection
+                    “$server_name” is the name or IP address of the server hosting MySQL server.
+                    “$user_name” is a valid user name in MySQL server.
+                    “$password” is a valid password associated with a user name in MySQL server.
+
+🛑 PHP mysqli_select_db function
+
+✅ The mysqli_select_db function is used to select a database.
+
+    It has the following syntax.
+
+        <?php
+        mysqli_select_db($db_handle,$database_name);
+        ?>
+
+            HERE,
+
+            “mysqli_select_db(…)” is the database selection function that returns either true or false
+            “$database_name” is the name of the database
+            “$link_identifier” is optional, it is used to pass in the server connection link
+
+🛑 PHP mysqli_query function
+
+✅ The mysqli_query function is used to execute SQL queries.    
+
+✅ The function can be used to execute the following query types;
+
+    Insert
+    Select
+    Update
+    delete
+
+    It has the following syntax.
+
+        <?php
+        mysqli_query($db_handle,$query) ;
+        ?>
+            
+            HERE,
+
+                “mysqli_query(…)” is the function that executes the SQL queries.
+                “$query” is the SQL query to be executed
+                “$link_identifier” is optional, it can be used to pass in the server connection link
+
+🛑 PHP mysqli_num_rows function
+
+✅ The mysqli_num_rows function is used to get the number of rows returned from a select query.
+
+✅ It has the following syntax.
+
+    <?php
+    mysqli_num_rows($result);
+    ?>
+        HERE,
+
+        “mysqli_num_rows(…)” is the row count function
+        “$result” is the mysqli_query result set
