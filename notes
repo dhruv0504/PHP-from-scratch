@@ -1174,3 +1174,5 @@ It has the following basic syntax.
 
         “mysqli_num_rows(…)” is the row count function
         “$result” is the mysqli_query result set
+
+✅ 
