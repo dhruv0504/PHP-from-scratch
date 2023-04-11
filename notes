@@ -562,6 +562,7 @@ add_numbers ();
 🛑 When and why we are using forms?
 
 ✅ Forms come in handy when developing flexible and dynamic applications that accept user input.
+
 ✅ Forms can be used to edit already existing data from the database
 
 🛑 Create a form
