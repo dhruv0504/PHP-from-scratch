@@ -942,3 +942,68 @@ a+	    Php append to file at end
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 ⭕ PHP preg_match(): Regular Expressions (Regex)
+
+🛑 What is Regular expression in PHP?
+
+✅ PHP Regular Expression also known as regex are powerful pattern matching algorithm that can be performed in a single expression. 
+✅ Regular expressions use arithmetic operators such as (+,-,^) to create complex expressions. 
+✅ They can help you accomplish tasks such as validating email addresses, IP address etc.
+✅ PHP Regular expressions simplify identifying patterns in string data by calling a single function. This saves us coding time.
+✅ When validating user input such as email address, domain names, telephone numbers, IP addresses,
+✅ Highlighting keywords in search results
+✅ When creating a custom HTML template. Regex in PHP can be used to identify the template tags and replace them with actual data.
+
+🛑 Built-in Regular expression Functions in PHP
+
+✅ <?php
+        function_name('/pattern/',subject);
+    ?>
+
+✅ preg_match() in PHP – this function is used to perform pattern matching in PHP on a string. It returns true if a match is found and false if a match is not found. 
+
+    Example:
+
+    <?php
+    $my_url = "www.guru99.com";
+    if (preg_match("/guru/", $my_url))
+    {
+        echo "the url $my_url contains guru";
+    }
+    else
+    {
+        echo "the url $my_url does not contain guru";
+    }
+    ?>
+
+✅ preg_split() in PHP – this function is used to perform a pattern match on a string and then split the results into a numeric array
+
+    Example:
+
+    <?php
+
+    $my_text="I Love Regular Expressions";
+
+    $my_array  = preg_split("/ /", $my_text);
+
+    print_r($my_array );
+
+    ?>
+
+✅ preg_replace() in PHP – this function is used to perform a pattern match on a string and then replace the match with the specified text.
+
+    Example:
+
+    <?php
+
+    $text = "We at Guru99 strive to make quality education affordable to the masses. Guru99.com";
+
+    $text = preg_replace("/Guru/", '<span style="background:yellow">Guru</span>', $text);
+
+    echo $text;
+
+    ?>
+        
+
+🛑
+🛑
+🛑
