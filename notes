@@ -1102,6 +1102,8 @@ It has the following basic syntax.
 
 ✅ HTTPS encrypts messages before sending them.
 
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
 ⭕ PHP MySQLi Functions
 
 ✅ PHP has a rich collection of built in functions for manipulating MySQL databases.
@@ -1175,4 +1177,53 @@ It has the following basic syntax.
         “mysqli_num_rows(…)” is the row count function
         “$result” is the mysqli_query result set
 
-✅ 
+🛑 PHP mysqli_fetch_array function
+
+✅ The mysqli_fetch_array function is used fetch row arrays from a query result set.
+
+        <?php
+        mysqli_fetch_array($result);
+        ?>
+
+            HERE,
+
+                “mysqli_fetch_array(…)” is the function for fetching row arrays
+                “$result” is the result returned by the mysqli_query function.
+
+🛑 PHP mysqli_close function
+
+✅ The mysqli_close function is used to close an open database connection.
+
+✅ The mysqli_close function is used to close an open database connection.
+
+    It has the following syntax.
+
+        <?php
+        mysqli_close($db_handle);
+        ?>
+                        HERE,
+
+                            “mysqli_close(…)” is the PHP function
+                            “$link_identifier” is optional, it is used to pass in the server connection resource
+
+🛑 PHP Data Access Object PDO
+
+✅ The PDO is a class that allows us to manipulate different database engines such as MySQL, PostGres, MS SQL Server etc.
+
+✅ ODBC ODBC is the acronym for Open Database Connectivity. It has the following basic syntax.
+
+    <?php $conn = odbc_connect($dsn, $user_name, $password); ?>
+    
+                                HERE,
+
+                                “odbc_connect” is the PHP built in function
+                                “$dsn” is the ODBC data source name.
+                                “$user_name” is optional, it is used for the ODBC user name
+                                “$password” is optional, it is used for the ODBC password
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+⭕ PHP Object Oriented Programming (OOPs) concept 
+
+🛑
+🛑
